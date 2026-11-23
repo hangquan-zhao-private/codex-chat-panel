@@ -1,0 +1,9 @@
+.vscode/**
+src/**
+webview-ui/**
+node_modules/**
+**/*.map
+tsconfig.json
+.gitignore
+*.vsix
+media/logo.svg

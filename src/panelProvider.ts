@@ -87,7 +87,7 @@ export class CodexPanelProvider implements vscode.WebviewViewProvider {
     try {
       this.post({ type: 'sessions', sessions: await this.store.list() });
     } catch (e: any) {
-      vscode.window.showErrorMessage(`Codex Studio: failed to read sessions: ${e.message}`);
+      vscode.window.showErrorMessage(`Codex Chat: failed to read sessions: ${e.message}`);
     }
   }
 
@@ -171,7 +171,7 @@ export class CodexPanelProvider implements vscode.WebviewViewProvider {
     this.stop();
     const s = await this.store.load(id);
     if (!s) {
-      vscode.window.showWarningMessage('Codex Studio: session not found.');
+      vscode.window.showWarningMessage('Codex Chat: session not found.');
       return;
     }
     this.sessionId = id;
@@ -185,7 +185,7 @@ export class CodexPanelProvider implements vscode.WebviewViewProvider {
     try {
       await vscode.window.showTextDocument(vscode.Uri.file(abs), { preview: true });
     } catch {
-      vscode.window.showWarningMessage(`Codex Studio: cannot open ${abs}`);
+      vscode.window.showWarningMessage(`Codex Chat: cannot open ${abs}`);
     }
   }
 

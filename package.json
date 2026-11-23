@@ -1,6 +1,6 @@
 {
-  "name": "codex-studio",
-  "displayName": "Codex Studio (Unofficial)",
+  "name": "codex-chat-panel",
+  "displayName": "Codex Chat Panel",
   "description": "A beautiful chat panel for the Codex CLI with per-folder session history, model and access pickers.",
   "version": "0.1.0",
   "publisher": "hangquan",
@@ -20,12 +20,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hangquan-zhao-private/codex-studio.git"
+    "url": "https://github.com/hangquan-zhao-private/codex-chat-panel.git"
   },
   "bugs": {
-    "url": "https://github.com/hangquan-zhao-private/codex-studio/issues"
+    "url": "https://github.com/hangquan-zhao-private/codex-chat-panel/issues"
   },
-  "homepage": "https://github.com/hangquan-zhao-private/codex-studio#readme",
+  "homepage": "https://github.com/hangquan-zhao-private/codex-chat-panel#readme",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -40,7 +40,7 @@
       "activitybar": [
         {
           "id": "codexStudio",
-          "title": "Codex Studio",
+          "title": "Codex Chat",
           "icon": "media/icon.svg"
         }
       ]
@@ -58,19 +58,19 @@
       {
         "command": "codexStudio.newChat",
         "title": "New Chat",
-        "category": "Codex Studio",
+        "category": "Codex Chat",
         "icon": "$(add)"
       },
       {
         "command": "codexStudio.showHistory",
         "title": "Show History",
-        "category": "Codex Studio",
+        "category": "Codex Chat",
         "icon": "$(history)"
       },
       {
         "command": "codexStudio.askAboutSelection",
         "title": "Ask Codex About Selection",
-        "category": "Codex Studio"
+        "category": "Codex Chat"
       }
     ],
     "menus": {
@@ -95,7 +95,7 @@
       ]
     },
     "configuration": {
-      "title": "Codex Studio",
+      "title": "Codex Chat Panel",
       "properties": {
         "codexStudio.codexPath": {
           "type": "string",

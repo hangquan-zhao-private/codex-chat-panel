@@ -1,4 +1,4 @@
-# Codex Studio (Unofficial)
+# Codex Chat Panel
 
 A clean, modern chat panel for the [Codex CLI](https://github.com/openai/codex) inside VS Code — with conversation history organized **per folder**.
 
